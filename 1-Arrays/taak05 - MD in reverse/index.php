@@ -2,13 +2,35 @@
 
 
   
-$provincies = array(
-    "provincie" => 'Groningen', 
-    "hoofdstad" => 'Groningen', 
-    "bevolking" => '583990',
-    "inwoners_gemeente" => '100.000'
+$provincies = [
+    [
+      'provincie' => 'Groningen',
+      'hoofdstad' => 'Groningen',
+      'bevolking' => '583990',
+      'inwoners_gemeente'  => 'Groningen'
+    ],
+    [
+        'provincie' => 'Drenthe',
+        'hoofdstad' => 'Assen',
+        'bevolking' => '493.682',
+        'inwoners_gemeente'  => 'Emmen'
+    ],
+    [
+        'provincie' => 'Noord-Holland',
+        'hoofdstad' => 'Amsterdam',
+        'bevolking' => '2.879.527',
+        'inwoners_gemeente'  => 'Amsterdam'
+    ],
+    [
+        'provincie' => 'Zuid-Holland',
+        'hoofdstad' => 'Den Haag',
+        'bevolking' => '3.708.696',
+        'inwoners_gemeente'  => 'Rotterdam'
+    ],
 
-);
+
+];
+
 
 
 
