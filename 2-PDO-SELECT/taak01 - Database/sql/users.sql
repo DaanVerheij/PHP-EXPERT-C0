@@ -34,7 +34,8 @@ CREATE TABLE `users` (
   `lastname` varchar(191) NOT NULL,
   `email` varchar(191) NOT NULL,
   `password` varchar(60) NOT NULL,
-  `role` int(1) NOT NULL COMMENT '1=Admin;2=Manager; 3=Medewerker'
+  `role` int(1) NOT NULL COMMENT '1=Admin;2=Manager; 3=Medewerker',
+  primary key (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -54,8 +55,6 @@ INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `password`, `role`)
 --
 -- Indexen voor tabel `users`
 --
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT voor geëxporteerde tabellen
@@ -64,9 +63,6 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT voor een tabel `users`
 --
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

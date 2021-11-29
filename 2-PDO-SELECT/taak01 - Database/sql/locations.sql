@@ -32,12 +32,17 @@ CREATE TABLE `locations` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(191) NOT NULL,
   `address` varchar(191) NOT NULL,
-  `city` varchar(191) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
+  `city` varchar(191) NOT NULL,
+  PRIMARY KEY (`id`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 --
 -- Gegevens worden geëxporteerd voor tabel `locations`
 --
+
+--
+-- Indexen voor tabel `locations`
+--
+
 
 INSERT INTO `locations` (`id`, `name`, `address`, `city`) VALUES
 (1, 'Tools4ever Utrecht', 'Neude 1', 'Utrecht'),
@@ -53,21 +58,12 @@ INSERT INTO `locations` (`id`, `name`, `address`, `city`) VALUES
 --
 
 --
--- Indexen voor tabel `locations`
---
-ALTER TABLE `locations`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT voor geëxporteerde tabellen
 --
 
 --
 -- AUTO_INCREMENT voor een tabel `locations`
 --
-ALTER TABLE `locations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
